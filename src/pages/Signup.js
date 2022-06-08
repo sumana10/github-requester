@@ -53,12 +53,13 @@ const Signup = () => {
   }
   return (
     <Container className="text-center min-vh-100">
-    <div className="mt-5">
-    <img src={fire} alt="where" />+
-    <img src={git} alt="where" />
-    </div>
+   
       <Row>
-        <Col lg={6} className="offset-lg-3 mt-5">
+        <Col lg={5} className="offset-lg-4 mt-5">
+        <div className="mt-5 mb-5">
+        <img src={fire} alt="where" />+
+        <img src={git} alt="where" />
+        </div>
           <Card>
             <Form onSubmit={handleSubmit}>
               <CardHeader className="">Signup here</CardHeader>
