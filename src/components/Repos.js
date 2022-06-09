@@ -22,13 +22,15 @@ const Repos = ({ repos_url }) => {
     <>
     <ListGroup style={{overflow:"auto", height:"700" + "px"}}>
       {repos.map(repo => (
+        repo.homepage ? (
         <ListGroupItem key={repo.id}>
           <h6 className="text-primary text-capitalize">{repo.name}</h6>
           <div className="text-secondary text-capitalize">{repo.language}</div>
           <div className="text-info text-capitalize">{repo.description}</div>
-          {repo.homepage ?  <a className="text-success"  href={repo.homepage}>Hosted Link</a> : null}
+         <a className="text-success"  href={repo.homepage} target="_blank">Hosted Link</a> 
          
-        </ListGroupItem>
+        </ListGroupItem>)
+        : null
       ))}
     </ListGroup>
     

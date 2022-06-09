@@ -22,7 +22,7 @@ import fire from "./firebase.png"
 import git from "./github2.png"
 
 
-const Signup = () => {
+const Signin = () => {
   const context = useContext(UserContext);
 
   const [email, setEmail] = useState("");
@@ -109,4 +109,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Signin;

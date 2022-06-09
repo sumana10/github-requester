@@ -15,6 +15,9 @@ const UserCard = ({ user }) => {
         <p>
           Available for hire: {user.hireable ? "YES" : "NOPE"}
         </p>
+        <p>
+          Followers: {user.followers}
+        </p>
         <h5><a className="text-info"  href={user.html_url}>Visit Profile</a></h5>
         </CardText>
       </CardBody>
